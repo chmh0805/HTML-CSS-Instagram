@@ -1,0 +1,63 @@
+/* 공통적인 css (버튼, 마진, 폰트사이즈 등) */
+* {
+    margin: 0 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+.login-btn {
+    margin: 10px 0;
+    background-color: #B2DFFC;
+    height: 30px;
+    color: white;
+    border-radius: 6px;
+    border: 0;
+    font-weight:700;
+    width: 88%;
+}
+
+.login-btn:hover {
+    background-color: #0095F6;
+    cursor: pointer;
+}
+
+/* mt(margin-top), mb(margin-bottom) */
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.a-link-facebook {
+    color: #385185;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.a-link-forget {
+    text-decoration: none;
+    font-size: 13px;
+    color: #00376B;
+}
+
+.a-link-enter {
+    color: #0095F6;
+    font-weight: 600;
+    text-decoration: none;
+}

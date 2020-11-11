@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>👀Instagram</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__box">
+            <div class="header__logo">
+                <img src="images/logo.png" />
+            </div>
+            <div class="header__search">
+                <div id="searchInput" class="search__input">
+                    <div class="search__icon__del"><i class="material-icons">search</i></div>
+                    <input type="text" placeholder="검색">
+                    <div class="search__icon__del" onclick="searchInputHide()">
+                        <i class="material-icons">highlight_off</i>
+                    </div>
+                </div>
+                <div class="search__menu" id="search" onclick="searchInputShow()">
+                    <div class="search__icon"><i class="material-icons">search</i></div>
+                    <div class="search__tag">검색</div>
+                </div>
+            </div>
+            <div class="header__menu">
+                <div><a href="home.html"><i class="material-icons">home</i></a></div>
+                <div><a href="#"><i class="material-icons">near_me</i></a></div>
+                <div><a href="explore.html"><i class="material-icons">explore</i></a></div>
+                <div><i class="material-icons" onclick="modal()">favorite_border</i></div>
+                <div><a href="profile.html"><i class="material-icons">account_circle</i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="profile">
+        <section class="profile__main">
+            <div class="profile__img">
+                <img src="images/card-header__user-img.png" />
+            </div>
+            <div class="profile__text">
+                <div class="text__t">
+                    <div class="t__name">Tube</div>
+                    <div class="t__edit">프로필 편집</div>
+                    <div class="t__set"><i class="material-icons">settings</i></div>
+                </div>
+                <div class="text__m">
+                    <div style="display: flex; margin-right: 40px;">
+                        <div>게시물</div>
+                        <div style="font-weight: 600; margin-left: 5px;">6</div>
+                    </div>
+                    <div style="display: flex; margin-right: 40px;">
+                        <div>팔로워</div>
+                        <div style="font-weight: 600; margin-left: 5px;">690</div>
+                    </div>
+                    <div style="display: flex; margin-right: 40px;">
+                        <div>팔로우</div>
+                        <div style="font-weight: 600; margin-left: 5px;">547</div>
+                    </div>
+                </div>
+                <div class="font--weight-600 text__b">북경오리 아닙니다..</div>
+            </div>
+        </section>
+
+        <hr class="profile__line" />
+
+        <section class="profile__category">
+            <ul class="category__menu">
+                <li class="category__menu__post">
+                    <i class="material-icons">grid_on</i>
+                    게시물
+                </li>
+                <li class="category__menu__igtv">
+                    <i class="material-icons">live_tv</i>
+                    IGTV
+                </li>
+                <li class="category__menu__save">
+                    <i class="material-icons">bookmark_border</i>
+                    저장됨
+                </li>
+                <li class="category__menu__tag">
+                    <i class="material-icons">account_circle</i>
+                    태그됨
+                </li>
+            </ul>
+            <div class="category__photo">
+                <div>
+                    <div id="photo1">
+                        <img src="images/profile_images/규카츠.jpg" />
+                    </div>
+                    <div class="photo__cover" id="photoCover1">
+                        <div>
+                            <div>
+                                <i class="material-icons">favorite</i>
+                                <div>15</div>
+                            </div>
+                            <div>
+                                <i class="material-icons">textsms</i>
+                                <div>48</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div id="photo2">
+                        <img src="images/profile_images/떡볶이.jpg" />
+                    </div>
+                    <div class="photo__cover" id="photoCover2">
+                        <div>
+                            <div>
+                                <i class="material-icons">favorite</i>
+                                <div>15</div>
+                            </div>
+                            <div>
+                                <i class="material-icons">textsms</i>
+                                <div>48</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div id="photo3">
+                        <img src="images/profile_images/피자.png" />
+                    </div>
+                    <div class="photo__cover" id="photoCover3">
+                        <div>
+                            <div>
+                                <i class="material-icons">favorite</i>
+                                <div>15</div>
+                            </div>
+                            <div>
+                                <i class="material-icons">textsms</i>
+                                <div>48</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div id="photo4">
+                        <img src="images/profile_images/토마토파스타.jfif" />
+                    </div>
+                    <div class="photo__cover" id="photoCover4">
+                        <div>
+                            <div>
+                                <i class="material-icons">favorite</i>
+                                <div>15</div>
+                            </div>
+                            <div>
+                                <i class="material-icons">textsms</i>
+                                <div>48</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div id="photo5">
+                        <img src="images/profile_images/치킨.jpg" />
+                    </div>
+                    <div class="photo__cover" id="photoCover5">
+                        <div>
+                            <div>
+                                <i class="material-icons">favorite</i>
+                                <div>15</div>
+                            </div>
+                            <div>
+                                <i class="material-icons">textsms</i>
+                                <div>48</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div id="photo6">
+                        <img src="images/profile_images/삼겹살.jfif" />
+                    </div>
+                    <div class="photo__cover" id="photoCover6">
+                        <div>
+                            <div>
+                                <i class="material-icons">favorite</i>
+                                <div>15</div>
+                            </div>
+                            <div>
+                                <i class="material-icons">textsms</i>
+                                <div>48</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__menu">
+            <a class="footer__g-font" href="#">소개</a>
+            <a class="footer__g-font" href="#">블로그</a>
+            <a class="footer__g-font" href="#">채용 정보</a>
+            <a class="footer__g-font" href="#">도움말</a>
+            <a class="footer__g-font" href="#">API</a>
+            <a class="footer__g-font" href="#">개인정보처리방침</a>
+            <a class="footer__g-font" href="#">약관</a>
+            <a class="footer__g-font" href="#">인기 계정</a>
+            <a class="footer__g-font" href="#">해시태그</a>
+            <a class="footer__g-font" href="#">위치</a>
+        </div>
+        <div class="footer__under">
+            <a class="footer__g-font" href="#" style="margin-right: 5px;">
+                한국어
+                <img src="images/arrow-btm.png" style="width:12px; height:12px;">
+            </a>
+            <span class="footer__g-font" style="font-size: 11px;">© 2020 Instagram from Facebook</span>
+        </div>
+    </footer>
+
+    <modal>
+        <div class="modal" id="modal">
+            <div class="modal__alarm">
+                <div class="alarm__img">
+                    <img src="images/profile_images/튜브.jfif" />
+                </div>
+                <div class="alarm__text">
+                    <div class="alarm__text__comment">
+                        <b>h_ggob</b> 님이 댓글에서 회원님을 언급했습니다.
+                        <div class="comment__date">1주</div>
+                    </div>
+                    <div class="alarm__text__img">
+                        <img src="images/profile_images/서면.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal__alarm">
+                <div class="alarm__img">
+                    <img src="images/profile_images/신동.jfif" />
+                </div>
+                <div class="alarm__text">
+                    <div class="alarm__text__comment">
+                        <b>shin__d</b> 님이 댓글에서 회원님을 언급했습니다.
+                        <div class="comment__date">
+                            3주
+                        </div>
+                    </div>
+                    <div class="alarm__text__img">
+                        <img src="images/profile_images/덕천.jfif" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal__alarm">
+                <div class="alarm__img">
+                    <img src="images/profile_images/효정.jfif" />
+                </div>
+                <div class="alarm__text">
+                    <div class="alarm__text__comment">
+                        <b>_hyojung_</b> 님이 회원님의 사진을 좋아합니다.
+                        <div class="comment__date">
+                            3주
+                        </div>
+                    </div>
+                    <div class="alarm__text__img">
+                        <img src="images/profile_images/메이플.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </modal>
+
+    <script>
+        function modal() {
+            $("#modal").toggle();
+        }
+        $("#searchInput").hide();
+
+        function searchInputShow() {
+            $("#searchInput").show();
+            $("#search").hide();
+        }
+
+        function searchInputHide() {
+            $("#search").show();
+            $("#searchInput").hide();
+        }
+
+        $("#photoCover1").hide();
+        $("#photoCover2").hide();
+        $("#photoCover3").hide();
+        $("#photoCover4").hide();
+        $("#photoCover5").hide();
+        $("#photoCover6").hide();
+
+        $("#photoCover1").mouseleave(function () {
+            $("#photoCover1").hide();
+        });
+
+        $("#photo1").mouseover(function () {
+            $("#photoCover1").show();
+        });
+
+        $("#photoCover2").mouseleave(function () {
+            $("#photoCover2").hide();
+        });
+
+        $("#photo2").mouseover(function () {
+            $("#photoCover2").show();
+        });
+
+        $("#photoCover3").mouseleave(function () {
+            $("#photoCover3").hide();
+        });
+        $("#photo3").mouseover(function () {
+            $("#photoCover3").show();
+        });
+
+        $("#photoCover4").mouseleave(function () {
+            $("#photoCover4").hide();
+        });
+        $("#photo4").mouseover(function () {
+            $("#photoCover4").show();
+        });
+
+        $("#photoCover5").mouseleave(function () {
+            $("#photoCover5").hide();
+        });
+        $("#photo5").mouseover(function () {
+            $("#photoCover5").show();
+        });
+
+        $("#photoCover6").mouseleave(function () {
+            $("#photoCover6").hide();
+        });
+        $("#photo6").mouseover(function () {
+            $("#photoCover6").show();
+        });
+    </script>
+</body>
+
+</html>

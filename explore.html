@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>👀Instagram</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body style="background-color: #FAFAFA;">
+    <header class="header">
+        <div class="header__box">
+            <div class="header__logo">
+                <img src="images/logo.png" />
+            </div>
+            <div class="header__search">
+                <div id="searchInput" class="search__input">
+                    <div class="search__icon__del"><i class="material-icons">search</i></div>
+                    <input type="text" placeholder="검색">
+                    <div class="search__icon__del" onclick="searchInputHide()">
+                        <i class="material-icons">highlight_off</i>
+                    </div>
+                </div>
+                <div class="search__menu" id="search" onclick="searchInputShow()">
+                    <div class="search__icon"><i class="material-icons">search</i></div>
+                    <div class="search__tag">검색</div>
+                </div>
+            </div>
+            <div class="header__menu">
+                <div><a href="home.html"><i class="material-icons">home</i></a></div>
+                <div><a href="#"><i class="material-icons">near_me</i></a></div>
+                <div><a href="explore.html"><i class="material-icons">explore</i></a></div>
+                <div><i class="material-icons" onclick="modal()">favorite_border</i></div>
+                <div><a href="profile.html"><i class="material-icons">account_circle</i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="explore__main" style="color: rgb(250, 250, 250);">
+        <section class="main__img-section">
+            <div class="main__big-container">
+                <div class="main__2-imgs">
+                    <div id="img1" class="main__sm-img" style="margin-bottom: 7%;">
+                        <div id="rating1" class="main__rating">
+                            <i class="main__rating-favorite-icon large material-icons">favorite</i>
+                            <span class="main__rating-favorite-number">220</span>
+                            <i class="main__rating-comment-icon large material-icons">mode_comment</i>
+                            <span class="main__rating-comment-number">8</span>
+                        </div>
+                        <img src="images/explore1.jpg" />
+                    </div>
+                    <div id="img2" class="main__sm-img">
+                        <div id="rating2" class="main__rating">
+                            <i class="main__rating-favorite-icon large material-icons">favorite</i>
+                            <span class="main__rating-favorite-number">421</span>
+                            <i class="main__rating-comment-icon large material-icons">mode_comment</i>
+                            <span class="main__rating-comment-number">11</span>
+                        </div>
+                        <img src="images/explore2.jpg" />
+                    </div>
+                </div>
+                <div class="main__1-img">
+                    <div id="img3" class="main__xl-img">
+                        <div id="rating3" class="main__rating">
+                            <i class="main__rating-favorite-icon large material-icons">favorite</i>
+                            <span class="main__rating-favorite-number">2800</span>
+                            <i class="main__rating-comment-icon large material-icons">mode_comment</i>
+                            <span class="main__rating-comment-number">320</span>
+                        </div>
+                        <img src="images/explore3.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="main__container">
+                <div class="main__3-imgs">
+                    <div id="img4" class="main__sm-img" style="margin-right: 4%;">
+                        <div id="rating4" class="main__rating">
+                            <i class="main__rating-favorite-icon large material-icons">favorite</i>
+                            <span class="main__rating-favorite-number">20</span>
+                            <i class="main__rating-comment-icon large material-icons">mode_comment</i>
+                            <span class="main__rating-comment-number">20</span>
+                        </div>
+                        <img src="images/explore4.jpg" />
+                    </div>
+                    <div id="img5" class="main__sm-img" style="margin-right: 4%;">
+                        <div id="rating5" class="main__rating">
+                            <i class="main__rating-favorite-icon large material-icons">favorite</i>
+                            <span class="main__rating-favorite-number">20</span>
+                            <i class="main__rating-comment-icon large material-icons">mode_comment</i>
+                            <span class="main__rating-comment-number">20</span>
+                        </div>
+                        <img src="images/explore5.png" />
+                    </div>
+                    <div id="img6" class="main__sm-img">
+                        <div id="rating6" class="main__rating">
+                            <i class="main__rating-favorite-icon large material-icons">favorite</i>
+                            <span class="main__rating-favorite-number">20</span>
+                            <i class="main__rating-comment-icon large material-icons">mode_comment</i>
+                            <span class="main__rating-comment-number">20</span>
+                        </div>
+                        <img src="images/explore6.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="main__container">
+                <div class="main__3-imgs">
+                    <div id="img7" class="main__sm-img" style="margin-right: 4%;">
+                        <div id="rating7" class="main__rating">
+                            <i class="main__rating-favorite-icon large material-icons">favorite</i>
+                            <span class="main__rating-favorite-number">20</span>
+                            <i class="main__rating-comment-icon large material-icons">mode_comment</i>
+                            <span class="main__rating-comment-number">20</span>
+                        </div>
+                        <img src="images/explore7.png" />
+                    </div>
+                    <div id="img8" class="main__sm-img" style="margin-right: 4%;">
+                        <div id="rating8" class="main__rating">
+                            <i class="main__rating-favorite-icon large material-icons">favorite</i>
+                            <span class="main__rating-favorite-number">20</span>
+                            <i class="main__rating-comment-icon large material-icons">mode_comment</i>
+                            <span class="main__rating-comment-number">20</span>
+                        </div>
+                        <img src="images/explore8.png" />
+                    </div>
+                    <div id="img9" class="main__sm-img">
+                        <div id="rating9" class="main__rating">
+                            <i class="main__rating-favorite-icon large material-icons">favorite</i>
+                            <span class="main__rating-favorite-number">20</span>
+                            <i class="main__rating-comment-icon large material-icons">mode_comment</i>
+                            <span class="main__rating-comment-number">20</span>
+                        </div>
+                        <img src="images/explore9.jpg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__menu">
+            <a class="footer__g-font" href="#">소개</a>
+            <a class="footer__g-font" href="#">블로그</a>
+            <a class="footer__g-font" href="#">채용 정보</a>
+            <a class="footer__g-font" href="#">도움말</a>
+            <a class="footer__g-font" href="#">API</a>
+            <a class="footer__g-font" href="#">개인정보처리방침</a>
+            <a class="footer__g-font" href="#">약관</a>
+            <a class="footer__g-font" href="#">인기 계정</a>
+            <a class="footer__g-font" href="#">해시태그</a>
+            <a class="footer__g-font" href="#">위치</a>
+        </div>
+        <div class="footer__under">
+            <a class="footer__g-font" href="#" style="margin-right: 5px;">
+                한국어
+                <img src="images/arrow-btm.png" style="width:12px; height:12px; color: #8e8e8e">
+            </a>
+            <span class="footer__g-font" style="font-size: 11px;">© 2020 Instagram from Facebook</span>
+        </div>
+    </footer>
+    <modal>
+        <div class="modal" id="modal">
+            <div class="modal__alarm">
+                <div class="alarm__img">
+                    <img src="images/profile_images/튜브.jfif" />
+                </div>
+                <div class="alarm__text">
+                    <div class="alarm__text__comment">
+                        <b>h_ggob</b> 님이 댓글에서 회원님을 언급했습니다.
+                        <div class="comment__date">1주</div>
+                    </div>
+                    <div class="alarm__text__img">
+                        <img src="images/profile_images/서면.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal__alarm">
+                <div class="alarm__img">
+                    <img src="images/profile_images/신동.jfif" />
+                </div>
+                <div class="alarm__text">
+                    <div class="alarm__text__comment">
+                        <b>shin__d</b> 님이 댓글에서 회원님을 언급했습니다.
+                        <div class="comment__date">
+                            3주
+                        </div>
+                    </div>
+                    <div class="alarm__text__img">
+                        <img src="images/profile_images/덕천.jfif" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal__alarm">
+                <div class="alarm__img">
+                    <img src="images/profile_images/효정.jfif" />
+                </div>
+                <div class="alarm__text">
+                    <div class="alarm__text__comment">
+                        <b>_hyojung_</b> 님이 회원님의 사진을 좋아합니다.
+                        <div class="comment__date">
+                            3주
+                        </div>
+                    </div>
+                    <div class="alarm__text__img">
+                        <img src="images/profile_images/메이플.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </modal>
+
+    <script>
+        function modal() {
+            $("#modal").toggle();
+        }
+
+        $("#searchInput").hide();
+
+        function searchInputShow() {
+            $("#searchInput").show();
+            $("#search").hide();
+        }
+
+        function searchInputHide() {
+            $("#search").show();
+            $("#searchInput").hide();
+        }
+
+        $("#rating1").hide();
+        $("#rating2").hide();
+        $("#rating3").hide();
+        $("#rating4").hide();
+        $("#rating5").hide();
+        $("#rating6").hide();
+        $("#rating7").hide();
+        $("#rating8").hide();
+        $("#rating9").hide();
+
+        $("#img1").mouseover(function () {
+            $("#rating1").show();
+        })
+        $("#img1").mouseleave(function () {
+            $("#rating1").hide();
+        })
+
+        $("#img2").mouseover(function () {
+            $("#rating2").show();
+        })
+        $("#img2").mouseleave(function () {
+            $("#rating2").hide();
+        })
+
+        $("#img3").mouseover(function () {
+            $("#rating3").show();
+        })
+        $("#img3").mouseleave(function () {
+            $("#rating3").hide();
+        })
+
+        $("#img4").mouseover(function () {
+            $("#rating4").show();
+        })
+        $("#img4").mouseleave(function () {
+            $("#rating4").hide();
+        })
+
+        $("#img5").mouseover(function () {
+            $("#rating5").show();
+        })
+        $("#img5").mouseleave(function () {
+            $("#rating5").hide();
+        })
+
+        $("#img6").mouseover(function () {
+            $("#rating6").show();
+        })
+        $("#img6").mouseleave(function () {
+            $("#rating6").hide();
+        })
+
+        $("#img7").mouseover(function () {
+            $("#rating7").show();
+        })
+        $("#img7").mouseleave(function () {
+            $("#rating7").hide();
+        })
+
+        $("#img8").mouseover(function () {
+            $("#rating8").show();
+        })
+        $("#img8").mouseleave(function () {
+            $("#rating8").hide();
+        })
+
+        $("#img9").mouseover(function () {
+            $("#rating9").show();
+        })
+        $("#img9").mouseleave(function () {
+            $("#rating9").hide();
+        })
+
+    </script>
+</body>
+
+</html>

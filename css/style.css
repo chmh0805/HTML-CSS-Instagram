@@ -1,0 +1,12 @@
+@import url("./header.css");
+@import url("./footer.css");
+@import url("./home.css");
+@import url("./profile.css");
+@import url("./modal.css");
+@import url("./explore.css");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
